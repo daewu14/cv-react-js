@@ -17,6 +17,8 @@ import DashboardRoundedIcon from '@material-ui/icons/DashboardRounded';
 import RecentActorsRoundedIcon from '@material-ui/icons/RecentActorsRounded';
 import PollRoundedIcon from '@material-ui/icons/PollRounded';
 import ContactMailRoundedIcon from '@material-ui/icons/ContactMailRounded';
+import {WelcomeScreen} from "../../pages/WelcomeScreen";
+import {ProfileScreen} from "../../pages/ProfileScreen";
 
 const MainComponent = () => {
     const theme = useTheme();
@@ -60,13 +62,10 @@ const MainComponent = () => {
                 </Paper>
             </AppBarStyled>
             <TabPanel value={value} index={0} dir={theme.direction}>
-                Item One
-                <Button onClick={()=>handleChangeIndex(1)}>
-                    Menuju ke halaman 2
-                </Button>
+                <WelcomeScreen/>
             </TabPanel>
             <TabPanel value={value} index={1} dir={theme.direction}>
-                Item Two
+                <ProfileScreen/>
             </TabPanel>
             <TabPanel value={value} index={2} dir={theme.direction}>
                 Item Three

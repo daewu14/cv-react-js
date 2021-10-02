@@ -40,7 +40,7 @@ export const MainHome = () => {
 function smargin() {
     let margin = 0;
     if (Screen(ScreenSize.isDesktopOrLaptop)) {
-        margin = 100;
+        margin = 80;
     }
     if (Screen(ScreenSize.isTablet)) {
         margin = 50;
